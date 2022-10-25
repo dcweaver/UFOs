@@ -17,29 +17,35 @@ function buildTable(data) {
         Object.values(dataRow).forEach((val) => {
             let cell = row.append("td");
             cell.text(val);
-    }
+        }
     );  
 });
 
 }
 
 function handleClick() {
-    //Get datetime value from filter
+    // Grab the datetime value from the filter
     let date = d3.select("#datetime").property("value");
     let filteredData = tableData;
-
-    // check to see if a date was entered and filter data useing that date
+  
+     // Check to see if a date was entered and filter the
+    // data using that date.
     if (date) {
-        // apply filter to table data to only keep rows with matching datetime filter
-        filteredData = filteredData.filter(row => row.datetime === date);
-    };
-    // Rebuild table using filtered Data 
-    // NOTE: if no date was entered, original table will not change
+      // Apply `filter` to the table data to only keep the
+      // rows where the `datetime` value matches the filter value
+      filteredData = filteredData.filter(row => row.datetime === date);
+    }
+  
+     // Rebuild the table using the filtered data
+    // @NOTE: If no date was entered, then filteredData will
+    // just be the original tableData.
     buildTable(filteredData);
-};
+  }
+  
+  // Attach an event to listen for the form button
+  d3.selectAll("#filter-btn").on("click", handleClick);
+  
+  // Build the table when the page loads
+  buildTable(tableData);
 
-// attach an event to listen for the form button
-d3.selectAll("#Filter-btn").on("click", handleClick);
 
-//Build the table when the page loads
-buildTable(tableData);
