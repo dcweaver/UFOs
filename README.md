@@ -13,7 +13,7 @@ Shown below is the filters and start of the unfiltered data table.
 
 With these five filters, the user has lots of flexibility in how it can choose to look through the available data. Shown below are examples of the filters being used and how the results update. 
 
-* **note** The country filter is not shown, as every data point in this array took place in the US, so filtering by US would not change the results.
+* **note** An example of the country filter is not shown, as every data point in this array took place in the US, so filtering by US would not change the table results.
 
 ![date_filter](static/images/date_filter.png)
 * As you can see, when a date is entered in the correct format, after the user hits the Enter key, the table will automatically update with all (if any) available matching results. The same applies to all five filters created for this page.
@@ -26,6 +26,11 @@ With these five filters, the user has lots of flexibility in how it can choose t
 ![shape_filter](static/images/shape_filter.png)
 
 
+## Summary
+While this webpage was a good introduction to using JavaScript, HTML, and Bootsrap to display, filter, and update information for the user, that is not to say this format and page are without drawbacks. 
 
+One such drawback is that this page is not designed to update in real-time, meaning the user has to manually hit enter every time they want to either filter or reset the data in the table. Secondly, the filters are not very flexible, an if the user inputted filter is off in any way then the filter will not work as intended.
+
+If I was to recommend any updates to the page in the future, I would recommend investing in a way to fix the two issues highlighted in the previous paragraph. 
 
 
