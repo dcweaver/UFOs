@@ -22,7 +22,7 @@ With these five filters, the user has lots of flexibility in how it can choose t
 
 ![state_filter](static/images/state_filter.png)
 
-* The country filter is not shown, as every data point in this array took place in the US, so filtering by US would not change the results. 
+* **note** The country filter is not shown, as every data point in this array took place in the US, so filtering by US would not change the results. 
 
 ![shape_filter](static/images/shape_filter.png)
 
