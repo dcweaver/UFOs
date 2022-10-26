@@ -9,6 +9,6 @@ The data used for this webpage is stored in the JavaScript Array titled data.js.
 There are five different criteria that the table can be filtered by: date, city, state, country, and shape. By utilizing Bootstrap, these filters allow the user to dynamically update the webpage to automatically apply the filters to the data and display the updated table results. 
 
 Shown below is the filters and start of the unfiltered data table. 
-![default_filters](default_filters_table.png)
+![default_filters](../UFOs/static/images/default_filters_table.png)
 
 
