@@ -13,8 +13,18 @@ Shown below is the filters and start of the unfiltered data table.
 
 With these five filters, the user has lots of flexibility in how it can choose to look through the available data. Shown below are examples of the filters being used and how the results update. 
 
+
+
 ![date_filter](static/images/date_filter.png)
 * As you can see, when a date is entered in the correct format, after the user hits the Enter key, the table will automatically update with all (if any) available matching results. The same applies to all five filters created for this page.
+
+![city_filter](static/images/city_filter.png)
+
+![state_filter](static/images/state_filter.png)
+
+* The country filter is not shown, as every data point in this array took place in the US, so filtering by US would not change the results. 
+
+![shape_filter](static/images/shape_filter.png)
 
 
 
